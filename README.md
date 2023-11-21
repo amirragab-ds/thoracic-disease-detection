@@ -27,13 +27,13 @@ There are 14 different diseases that we are trying to predict. The diseases are:
 * Mass: A growth of tissue that is over 3cm in diameter.
 
 These are the percentages of each disease in the dataset:
-[Percentages](images/Percentage-of-Each-Disease.png)
+![Percentages](images/Percentage-of-Each-Disease.png)
 
 These are the number of positive and negative cases for each disease, which shows how imbalanced the dataset is:
-[P/N Percentages](images/Positive-and-Negative-Percentages.png)
+![P/N Percentages](images/Positive-and-Negative-Percentages.png)
 
 These are the distributions for the training, validation, and test datasets, which should be fairly similar:
-[Distributions](images/Comparison-of-Disease-Percentages.png)
+![Distributions](images/Comparison-of-Disease-Percentages.png)
 
 
 ## Models
@@ -72,14 +72,14 @@ After training and testing the two models, we found that:
 
 1. The binary cross-entropy loss model, despite having high accuracy, is not ideal for this medical application. It correctly identifies 98.54% of negative cases but only 10.31% of positive cases. This high rate of false negatives is dangerous in a medical context, as it could lead to delayed treatment for patients who are actually sick.
    These are the AUROC values for the binary cross-entropy loss model for each of the diseases:
-   [AUROC](images/Binary-Crossentropy-ROC-Curves.png)
+   ![AUROC](images/Binary-Crossentropy-ROC-Curves.png)
    These are the Precision and Recall values for the model:
-   [report](images/Binary-Crossentropy.png)
+   ![report](images/Binary-Crossentropy.png)
 3. The weighted binary cross-entropy loss model performs better in distinguishing between positive and negative cases. It correctly identifies 86.62% of positive cases and 44.84% of negative cases. Despite a lower overall accuracy, its higher recall makes it more suitable for this application.
    These are the AUROC values for the Weighted binary cross-entropy loss model for each of the diseases:
-   [AUROC_w](images/Weighted-Binary-Crossentropy-ROC-Curves.png)
+   ![AUROC_w](images/Weighted-Binary-Crossentropy-ROC-Curves.png)
    These are the Precision and Recall values for the model:
-   [report_w](images/Weighted-Binary-Crossentropy.png)
+   ![report_w](images/Weighted-Binary-Crossentropy.png)
 This is much, much better than the binary cross-entropy loss model. Yes, 55.16% of healthy patients were misdiagnosed, but patients usually go for further testing to confirm the diagnosis. This is contrary to patients with a disease, where if they were told they do not have a disease, they may not go for further testing until the symptoms get worse. This is usually when it is too late and can make recovery much harder. This is why we want to minimize the number of false negatives, even if it means increasing the number of false positives.
 
 ## Usage
