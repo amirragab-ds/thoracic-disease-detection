@@ -1,4 +1,4 @@
-# Thoracic Disease Detection Using CNNs and Weighted Binary Cross Entropy Loss Based on Chest X-Ray Images
+# Chest Disease Detection Using CNNs and Weighted Binary Cross Entropy Loss Based on Chest X-Ray Images
 
 ## Overview
 
