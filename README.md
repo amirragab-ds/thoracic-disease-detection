@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to address the challenge of imbalanced medical datasets in the detection of thoracic diseases using chest X-ray images. The imbalance, where the number of samples in the disease class is much less than the number of samples in the normal class, can lead to models with poor predictive performance for the minority class. This is particularly dangerous in the medical field, where a model that appears to be accurate but is not can lead to misdiagnosis and potentially fatal outcomes.
+This project aims to address the challenge of imbalanced medical datasets in the detection of thoracic diseases using chest X-ray images. The imbalance, where the number of samples in the disease class is much less than the number of samples in the normal class, can lead to models with poor predictive performance for the minority class. This is particularly dangerous in the medical field, where a model that appears to be accurate but is not can lead to misdiagnosis and potentially fatal outcomes. You can see the full guide [here](https://neurobyte.org/guides/chest-xray-disease-detection-cnns-tensorflow-medical-imaging)
 
 ## Dataset
 
